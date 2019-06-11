@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+/* start here       start here       start here        start here        start here       start here */
+
+
 * {
     box-sizing: border-box;
 }
@@ -69,6 +72,28 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 8%;
+    width: 100%;
+}
+
+.header .navbar a {
+    text-decoration: none;
+    color: black;
 }
 
 .top-content {
@@ -104,13 +129,60 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.middle-content .boxes .box:nth-child(1) {
+    background-color: teal;  
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background-color: gold;  
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background-color: cadetblue;  
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background-color: coral;  
+}
+
+
+.middle-content .boxes .box:nth-child(5) {
+    background-color: crimson;  
+}
+
+
+.middle-content .boxes .box:nth-child(6) {
+    background-color: forestgreen;  
+}
+
+
+.middle-content .boxes .box:nth-child(7) {
+    background-color: darkorchid;  
+}
+
+
+.middle-content .boxes .box:nth-child(8) {
+    background-color: hotpink;  
+}
+
+
+.middle-content .boxes .box:nth-child(9) {
+    background-color: indigo;  
+}
+
+
+.middle-content .boxes .box:nth-child(10) {
+    background-color: dodgerblue;  
+}
+
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +216,80 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* about html start here   about html start here   about html start here   about html start here   about html start here   */
+
+.about-content-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-content-top .text-container {
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.about-content .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 46%;
+    margin:2%;
+    border-bottom: 1px dashed black;
+}
+
+.about-content .content img {
+    margin-bottom: 10px;
+
+}
+
+.about-content .content button {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: solid black;
+
+}
+
+.about-content-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-content-bottom .text-container {
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+
+.image {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
